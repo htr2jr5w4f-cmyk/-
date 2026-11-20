@@ -1,71 +1,142 @@
 # QBCC家庭保修保险
 
 ## 摘要
-本文整理昆士兰州法定的 Queensland Home Warranty Scheme（QBCC 家庭保修保险）：哪些工程必须投保（价值超过 $3,300 的住宅工程）、保费由谁交、什么时候交、保障什么（未完工、结构缺陷、非结构缺陷、沉降等）、各项时限和赔付上限。对省钱的意义：保费是"法定成本"，无法省；但懂得覆盖范围能帮你选对合同形式（只有固定总价合同才有未完工保障）、在时限内及时报案，避免几十万元的损失。业主自建（owner-builder）不在此保险范围内。
+本文整理昆士兰州法定的 Queensland Home Warranty Scheme（QBCC 家庭保修保险，法律上叫 statutory insurance scheme），内容包括：
+- 哪些工程必须投保：可保价值超过 $3,300 的住宅工程；
+- 保费由谁交、什么时候交；
+- 保障什么：未开工退定金、未完工、完工后缺陷、施工期间被破坏等；
+- 各项时限和赔付上限。
 
-适用州：QLD｜资料核对日期：2026-11-20｜状态：部分待证实
+对省钱的意义：保费是法定成本，省不了。但了解覆盖范围有三个用处：一是选对合同形式，只有固定总价合同才有未完工保障；二是在时限内及时报案；三是不提前付款，提前付的钱会被从赔付里扣掉。这样可以避免几十万元的损失。业主自建（owner-builder）不在这个保险范围内。
 
-> 核对方式说明：本次会话网络无法直接打开 qbcc.qld.gov.au，以下内容来自搜索引擎对 QBCC 官方页面及 "Queensland Home Warranty Scheme Product Disclosure July 2025"（QBCC PDF）的检索摘要。签约前应下载 QBCC 当前的 Product Disclosure 再核对一次。
+适用州：QLD｜资料核对日期：2026-11-20｜状态：已核实（保费金额待确认）
+
+> 核对方式：第二轮（2026-11-20）已直接读取 legislation.qld.gov.au 上以下两部法律的现行文本，以及 QBCC 页面原文：
+> - Queensland Building and Construction Commission Act 1991 (Qld)，下称 QBCC Act，Part 5；
+> - Queensland Building and Construction Commission Regulation 2018 (Qld)，下称 QBCC Regulation，Schedule 6 "Terms of cover for statutory insurance scheme"。
 >
-> ⚠ 州差异：各州的住宅保修保险制度完全不同（例如 NSW 的 Home Building Compensation Fund、VIC 的 Domestic Building Insurance 主要是"最后手段"保险）。QLD 由 QBCC 直接承保，本文只写 QLD。
+> 保险条款以法规为准，QBCC 的 Product Disclosure 只是说明文件。
+>
+> ⚠ 州差异：各州的住宅保修保险制度完全不同。例如 NSW 是 Home Building Compensation Fund，VIC 是 Domestic Building Insurance，它们主要是"最后手段"保险。QLD 由 QBCC 直接承保。本文只写 QLD。
 
 ---
 
 ## 1. 适用门槛：哪些工程要投保
-- 持牌承包商为业主做**"insurable residential construction work"（可保住宅建造工作）**且价值 **超过 $3,300** 时必须投保 [S1][S2]。价值计算包括**他人提供的材料**、人工和 GST [S1]。（QBCC 另一页写"$3,300 及以上"[S2]，临界值「待确认」。）
-- 业主自建：为持有覆盖该工作的 owner-builder permit 的业主做的工作，**不需交保费** [S1]；业主自建人也不在 Home Warranty Scheme 保障范围内（详见《QBCC执照与业主自建.md》）。
-- 一次建 3 套或以上住宅时，未完工保障不适用 [S3]。
+- **Primary insurable work（主要可保工作）**（QBCC Act s 67WC）：由持牌承包商进行、**可保价值超过 regulated amount** 的以下工作 [S1]：
+  - 建造 residence（住宅）或 related roofed building（有顶附属建筑）；
+  - 住宅建筑外壳以内的工作；
+  - 与住宅相连、需要 building approval 或 plumbing permit 的工作；
+  - 泳池等。
+  - regulated amount 定义为"**$3,300** 或法规规定的更高金额"。已核实：是"超过 $3,300"。
+- 围栏、园林、电气、空调、车道、热水器、太阳能等属于 **associated insurable work（附属可保工作）**，只有包含在主要可保工作的合同里才有保障（s 67WC(2)、s 67WB(3)）[S1]。
+- **可保价值**怎么算（QBCC 页面）[S2]：
+  - 包括材料（即使由他人提供）、人工和 GST；
+  - 项目超过 $150,000（不含 GST）时，人工还包括 QLeave 征费；
+  - 不包括 QBCC 保费本身；
+  - 合同里含的园林、车道、围栏、挡土墙、空调、热水器等附属工作也要计入。
+- **不保的情况**：
+  - 为持有覆盖该工作的 owner-builder permit 的人做的工作（s 67WB(1)(b)）[S1]；
+  - 整栋建筑的场外预制，以及预制房屋的运输和装卸（s 67WB(1)(c)–(e)）[S1]。用模块房、预制房省钱时要特别注意这一点，具体工作是否在保障内「待确认」，应向 QBCC 确认。
+- **同时签约建 3 个或以上居住单元的人，完全没有保险保障**（s 68(2)）[S1]。计算时，一栋独立住宅算 1 个单元，duplex 算 2 个。
 
-## 2. 保费由谁交、何时交
-- **持牌总承包商（principal contractor）**负责向业主收取保费并代业主交给 QBCC；分包商一般不另交 [S1]。也就是说：保费最终是**业主承担**，通常体现在合同价里。
-- 交费时间：在开工前，或签约后 10 个工作日内，以较早者为准 [S1]。
-- 保障开始：保费支付、签合同、开工三者中最早的那一天 [S1]。
-- 保费金额：按 QBCC 保费表（premium table），按每套住宅的可保价值以 $1,000 为一档递增，保费**含 GST** [S2]。
-- QBCC 页面举例：合同 $220,000（加上 QLeave 后可保价值 $221,150），保费约 **$2,395.70**——页面未标年份，「待证实」是否为现行保费表数字 [S2]。实际保费请用 QBCC 当前保费表/计算器查。
-- QLeave levy（长期服务假征费）：住宅工程价值 $150,000（不含 GST）或以上时，承包商另需缴纳，费率 **0.575%**（例：$200,000 → $1,150）[S2]。「待证实」：费率是否在 2025–26 有调整，请到 QLeave 官网核对。
-- 省钱提示：保费和 QLeave 都是法定费用，不能"省"；但要求 builder 在报价中**单列**保费和 QLeave，便于比较不同报价、防止重复计费。
+## 2. 保费由谁交、何时交、保障何时开始
+- **持牌承包商代业主交**：承包商须向业主（consumer）收取保费并交给 QBCC，交费期限是"签约后 10 个工作日"和"开工"两者中**较早**的那个（s 68B(2)），违者最高罚 100 penalty units [S1]。法律明确规定承包商是"代消费者"交费（s 68A）[S1]，所以保费最终由业主承担，通常体现在合同价里。
+- Schedule 1B s 33(3) 把开工前收取的保费算作"定金"的一部分，计入 5% 的定金上限（见《住宅建造合同法定要求.md》）[S1]。
+- **保障开始日**（s 68I(1)）：以下三者中最早的一天 [S1]：
+  - 承包商交保费；
+  - 业主与持牌承包商签约；
+  - 持牌承包商开工。
+- **保费金额**：按 QBCC 保费表计算。QBCC 页面上的计算示例如下 [S2]：
+  - 工作价值 $200,000（不含 GST）× QLeave 0.575% = $1,150；
+  - 可保价值 $220,000 + $1,150 = $221,150；
+  - 对应保费 $2,395.70。
 
-## 3. 覆盖范围与上限
-| 项目 | 内容 | 上限（标准 / 可选加保）|
+  这个页面最后审阅于 **2021-09-27**，所以这个示例不能当作现行保费。「待确认」：现行保费表需在 QBCC 官网查。
+- QLeave 征费：住宅工程价值 **$150,000（不含 GST）或以上**时须缴纳。QBCC 示例按 **0.575%** 计算 [S2]。「待确认」：现行费率以 QLeave 官网为准。
+- 省钱提示：要求 builder 在报价中**单列**保费和 QLeave，便于比较不同报价、防止重复计费。
+
+## 3. 保障内容（QBCC Regulation Schedule 6）
+| 情形 | 保障内容 | 关键条件 |
 |---|---|---|
-| 完工前（pre-completion） | 未完工（non-completion）、缺陷、故意破坏（vandalism）、盗窃 | $200,000 / $300,000 [S3] |
-| 完工后（post-completion） | 缺陷（结构与非结构）| $200,000 / $300,000 [S3] |
-| 沉降（subsidence or settlement） | 地面下沉或移位造成的损坏 | 「待证实」：有第三方称每项 $200,000，但未能在 2025 版 Product Disclosure 中直接核实 [S3][S4] |
+| **未开工**（s 5）| 退还未被退回的可保定金 | 须是**固定总价合同**；合同在签约后 **2 年内**终止且尚未开工；在合同终止后 **3 个月内**索赔 [S3] |
+| **已开工、未完工**（s 6、7）| 完成工程的合理费用 | 须是**固定总价合同**；合同在开工后 **2 年内**终止；在合同终止后 **3 个月内**索赔 [S3] |
+| 未完工期间住宅不能住（s 9）| 临时住宿、搬家、仓储的合理费用 | 在索赔期结束后 28 天内提出 [S3] |
+| 未完工期间被破坏、强行拆走，或遭火灾、风暴（s 10、12、13）| 恢复原状的费用 | 须在应当发现损坏后 **14 天内**索赔；破坏和拆走类每次只赔超过 **$2,500** 的部分，且须先向 Queensland Police Service 报案 [S3] |
+| **缺陷**（s 15）| 修复缺陷的合理费用，以及缺陷导致的其他必要修复（法规举例：底板缺陷导致沉降、墙体开裂）| 只是不符合图纸、但符合 Building Act、BCC、QDC 且不明显影响使用的，只赔价值损失 [S3] |
+| 缺陷导致住宅不能住（s 20）| 住宿、搬家、仓储费 | 每套上限 $5,000，加保后 $10,000（s 26(2)）[S3] |
 
-- 有法律信息来源指出 $200,000 是**同一合同下所有索赔（未完工+缺陷）合计**的上限 [S5]。「待证实」：以 QBCC Product Disclosure 原文为准。
-- 可选加保（$300,000）：需在投保时选择，额外保费「待证实」（未取得 QBCC 当前价格）。
-- 旧资料警告：2018 年版 Product Disclosure 中的 $100,000 / $150,000 等数字已过时，不要采用 [S3]。
+- **"固定总价合同"**：价格固定，只允许因 PC items、provisional sums、变更等调整（Schedule 6 s 3）[S3]。**cost-plus 合同没有未完工保障**。
+- **会被扣减的情况**（s 7(5)、s 15(4)）[S3]：
+  - 业主在合同下尚未付的余额（liability amount）会从赔付中扣除；
+  - **业主在到期日之前付给承包商的款项**，对应工作的完成费用也会被扣减。
+
+  也就是说，**提前付款会直接减少保险赔付**。
+- **不赔的情况**（s 18）[S3]：
+  - 业主无理拒绝原承包商进场修复；
+  - 原承包商仍有继续完成工程的法律义务。
 
 ## 4. 时限（最容易错过的地方）
-| 类型 | 保障期 | 报案时限 |
+| 类型 | 必须在何时之内发现 | 报案（索赔）期限 |
 |---|---|---|
-| 结构缺陷（structural defects） | **6 年 6 个月** [S4][S6] | 首次发现缺陷后 **3 个月内**报案 [S6] |
-| 非结构缺陷（non-structural defects） | **6 个月** [S4][S6] | 实质完工（substantial completion）后 **7 个月内**报案 [S6] |
-| 未完工（non-completion） | 仅限**固定总价合同**；若已开工，合同须在开工日起 2 年内终止 [S3][S4] | 合同终止后 3 个月内（来自律师/经纪摘要，「待证实」）[S4] |
+| **结构缺陷** | 保障开始日（cover commencement day）后 **6 年 6 个月**内；若工程在保障开始日后 6 个月内未实质完工，则从第 6 个月起再算 6 年 6 个月 [S3] | 首次发现或理应发现缺陷后 **3 个月内** [S3] |
+| **非结构缺陷** | 实质完工（substantially complete）后 **6 个月**内 [S3] | 实质完工后 **7 个月内** [S3] |
+| 未完工 / 未开工 | 见上表 | 合同终止后 **3 个月内** [S3] |
 
-- 结构缺陷 6 年 6 个月的**起算点**：QBCC 理赔手册写"自保费支付日起"，HIA 文章写"自实际完工起"——说法不一致，「待证实」，以 Product Disclosure 原文为准 [S6][S7]。
-- 不要把"12 个月"混淆进保险：12 个月通常是**合同里 builder 的 defects liability period**（住宅合同中 builder 在实际完工后 12 个月内修缺陷的义务），不是保险的非结构缺陷保障期 [S5]（详见《住宅建造合同法定要求.md》）。
-- **cost-plus（成本加酬金）合同一般不享有未完工保障**——这是选择合同形式时的重要考虑 [S3][S5]。
+- 结构缺陷的起算点：第一轮写"实际完工或交保费日，说法不一"。核对法规原文，起算点是 **cover commencement day**，即保险生效日，按 s 68I 取最早的一天；买了加保的，从加保生效日算（Schedule 6 s 16(4)）[S1][S3]。
+- 注意区分：**合同法定担保期**是另一套时限。QBCC Act Schedule 1B s 29 规定，结构缺陷 6 年、其他缺陷 1 年，从完工起算，最后 6 个月内发现的可再延长 6 个月起诉。这是向 builder 追责的诉讼时限，不是保险时限（见《住宅建造合同法定要求.md》）[S1]。
 
-## 5. 理赔一般流程（简要）
-1. 先书面通知 builder 修缺陷（保留证据、照片、日期）。
-2. 若 builder 不修或已破产/失联，在上述时限内向 QBCC 提出投诉/索赔；QBCC 可能先发出整改指令（direction to rectify）[S6]。
-3. 未完工索赔须先合法终止合同，且需 QBCC 接受 [S3][S4]。
-- 「待证实」：具体申请表格和步骤以 QBCC 当前 "Resolution Services / Claims procedure manual" 为准 [S6]。
+## 5. 赔付上限（QBCC Regulation Schedule 6 Part 4）
+| 项目 | 标准保障 | 加保（optional additional cover）|
+|---|---|---|
+| 实质完工前：未完工、缺陷、破坏和拆走类索赔**合计**（每套住宅）| **$200,000** | **$300,000** |
+| 实质完工后：缺陷及相关住宿费索赔**合计**（每套住宅）| **$200,000** | **$300,000** |
+| 其中住宿、搬家、仓储费（每套）| $5,000 | $10,000 |
+| 实质完工前的火灾、风暴索赔（每套）| $200,000 | $300,000 |
 
-## 6. 对业主的实际建议
-- 签约前在 QBCC 登记册确认 builder 持有效执照（见《QBCC执照与业主自建.md》），并在开工前要求 builder 提供 **QBCC 保险证明/保单确认**。
-- 选**固定总价合同**以获得未完工保障。
-- 合同价接近 $200,000 上限时（或远超时），考虑是否需要 $300,000 加保；但上限远低于大多数新房总价，**上限不等于全额保护**——仍要靠合同付款节奏（定金上限、按阶段付款）控制风险。
-- 实际完工后在日历上标记：6 个月（非结构保障）、7 个月（非结构报案截止）、12 个月（合同 defects liability period）、6 年 6 个月（结构）。
+- 以上金额都**含税**（s 22）[S3]，依据 Schedule 6 s 24–26 [S3]。
+- 沉降：法规没有单独的沉降上限。沉降导致的损坏按"缺陷导致的必要修复"处理，计入上面的缺陷合计上限（s 15(1)(b) 的举例）[S3]。
+- 加保：持牌承包商为该工作交过保费后，业主可以购买（QBCC Act s 67Z）[S1]。「待确认」：加保的价格。
+- 对业主的意义：$200,000 远低于多数新房的总价，**上限不等于全额保护**。仍要靠合同付款节奏控制风险：定金上限、按进度付款、不提前付款。
+
+## 6. 理赔一般流程（简要）
+1. 先书面通知 builder 修缺陷，并保留证据、照片和日期。
+2. 如果 builder 不修，或已破产、失联，在上述时限内向 QBCC 投诉或索赔。
+3. 未完工索赔，须先满足"固定总价合同已终止"的条件。法规列出的终止情形（Schedule 6 s 4）是：
+   - 因承包商违约被合法终止；
+   - 承包商死亡；
+   - 公司已不存在；
+   - 承包商破产且执照被吊销。
+
+   双方协商放弃合同的，**不算**合法终止 [S3]。
+- 具体申请表格和步骤以 QBCC 现行页面为准。「待确认」：本次没有核对申请表格。
+
+## 7. 对业主的实际建议
+- 签约前在 QBCC 登记册核实 builder 的执照（见《QBCC执照与业主自建.md》）。签约后 10 个工作日内或开工前，要求 builder 提供 QBCC 保险确认。
+- 选**固定总价合同**，才有未完工保障。
+- **绝不提前付款**，否则会被从保险赔付中扣减（Schedule 6 s 7(5)(b)）[S3]。
+- 实际完工后在日历上标出以下日子：
+  - 6 个月：非结构缺陷发现期截止；
+  - 7 个月：非结构缺陷报案截止；
+  - 1 年（另加 6 个月）：合同法定担保期中非结构缺陷的诉讼时限；
+  - 保险生效后 6 年 6 个月：结构缺陷发现期截止。
+- 发现结构问题后 **3 个月内**必须向 QBCC 报案。
+- 不要在同一时期签约建 3 个或以上住宅单元，否则完全没有保险。
+
+---
+
+## 核对记录（第二轮，2026-11-20）
+- 原写"结构缺陷 6 年 6 个月起算点不一致（保费支付日或实际完工），待证实"，核对原文为：Regulation Schedule 6 s 16(1)，从 cover commencement day 起算；工程 6 个月内未实质完工的，从保障开始日后第 6 个月起再算 6 年 6 个月。
+- 原写"$200,000 是否为所有索赔合计上限，待证实"，核对原文为：Schedule 6 s 24 和 s 26 分别规定实质完工前的未完工、缺陷、破坏类合计，以及实质完工后的缺陷合计，每套住宅各 $200,000（加保 $300,000）。
+- 原写"沉降上限待证实（第三方称 $200,000）"，核对原文为：法规没有单独的沉降上限，沉降作为缺陷后果计入缺陷合计上限。
+- 原写"一次建 3 套或以上住宅时未完工保障不适用"，核对原文为：QBCC Act s 68(2) 规定，同时签约建 3 个或以上居住单元的人**不享有任何**保险保障。
+- 原写"未完工报案期限合同终止后 3 个月（律师摘要，待证实）"，核对原文为：Schedule 6 s 7(6) 和 s 5(3)，合同终止后 3 个月内，已核实。
+- 原写"保费示例 $2,395.70 年份不明"，核对原文为：QBCC 页面最后审阅于 2021-09-27，示例不代表现行保费。
+- 新增：开工前收的保费计入定金上限（Schedule 1B s 33(3)）；提前付款会被从赔付中扣减；预制房屋的场外预制和运输不保；破坏类索赔 14 天时限和 $2,500 起赔额；住宿费 $5,000 / $10,000 上限。
 
 ---
 
 ## 来源
-- [S1] Who pays home warranty and when — QBCC — https://www.qbcc.qld.gov.au/running-business/home-warranty-insurance-obligations/who-pays-home-warranty-when — 页面审阅日期 2025-11-20（据搜索摘要）— 访问 2026-11-20
-- [S2] Calculating the premium — QBCC — https://qbcc.qld.gov.au/running-business/home-warranty-insurance-obligations/calculating-premium — 日期未标明 — 访问 2026-11-20
-- [S3] Queensland Home Warranty Scheme Product Disclosure, July 2025 — QBCC — https://www.qbcc.qld.gov.au/sites/default/files/2021-10/publication-qld-home-warranty-product-disclosure.pdf — 2025-07 — 访问 2026-11-20
-- [S4] Understanding the Queensland Home Warranty Scheme: A guide for property owners — QBCC — https://www.qbcc.qld.gov.au/news/understanding-queensland-home-warranty-scheme-guide-property-owners — 日期未标明 — 访问 2026-11-20
-- [S5] QBCC Home Warranty Insurance in Queensland（律师事务所文章，二手资料）— Boss Lawyers — https://bosslawyers.com.au/qbcc-home-warranty-insurance-claim-queensland/ ；QLD Home Warranty Insurance: Your Complete 2025 Legal Guide — Merlo Law — https://www.merlolaw.com.au/post/qld-home-warranty-insurance-your-complete-2025-legal-guide — 日期未标明 / 2025 — 访问 2026-11-20
-- [S6] Resolution Services – Claims procedure manual — QBCC — https://www.qbcc.qld.gov.au/sites/default/files/documents/claims-procedure-manual.pdf — 日期未标明 — 访问 2026-11-20
-- [S7] QBCC Home Warranty Insurance — HIA — https://hia.com.au/resources-and-advice/managing-your-business/managing-compliance/articles/qbcc-home-warranty-insurance — 日期未标明 — 访问 2026-11-20
+- [S1] Queensland Building and Construction Commission Act 1991 (Qld)，现行版本：s 67WB、67WC、67Z、68、68A、68B、68I，Schedule 1B s 29、33 — Queensland Legislation — https://www.legislation.qld.gov.au/view/whole/html/inforce/current/act-1991-098 — 现行版本 — 访问 2026-11-20（已读原文）
+- [S2] Calculating the premium — QBCC — https://qbcc.qld.gov.au/running-business/home-warranty-insurance-obligations/calculating-premium — 最后审阅 2021-09-27 — 访问 2026-11-20（已读原文）
+- [S3] Queensland Building and Construction Commission Regulation 2018 (Qld)，现行版本，Schedule 6 "Terms of cover for statutory insurance scheme"：s 3–7、9、10、12、13、15、16、18、20、22、24–26 — Queensland Legislation — https://www.legislation.qld.gov.au/view/whole/html/inforce/current/sl-2018-0138 — 现行版本 — 访问 2026-11-20（已读原文）
+- [S4] Queensland Home Warranty Scheme Product Disclosure, July 2025 — QBCC — https://www.qbcc.qld.gov.au/sites/default/files/2021-10/publication-qld-home-warranty-product-disclosure.pdf — 2025-07 — 访问 2026-11-20（仅搜索摘要，作为背景；条款以 [S3] 为准）

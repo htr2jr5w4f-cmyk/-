@@ -46,7 +46,10 @@
 6. **技能**：可使用任何需要的 skill；新装 skill 只能来自官方或知名开源来源，并登记到 `06-技能清单/技能与工具清单.md`。
 7. **需要业主决定的事**：记入 `07-学习报告/待证实与待决定汇总.md` 和当期学习报告，然后继续做其他部分，不停下来等。
 
-## 三、当前已知限制（2026-11-20）
+## 三、网络与已知限制
+- 2026-11-21 起，云端环境 `builder-knowledge-base` 已放行 86 个网站，包括：QBCC、昆州与联邦法律库、ABCB/NCC、ABS、布里斯班及东南昆州各市政府、WorkSafe、Safe Work Australia、QCAT 与判例库、昆州消防、ATO、RBA、Urban Utilities、Energex、NBN、NatHERS、Wood Solutions、钢结构协会、主要建材厂家（BlueScope、Lysaght、James Hardie、CSR/Gyprock、Boral、Stratco、Bunnings、Reece、Tradelink）、成本报告（RLB、CoreLogic、Rawlinsons、AIQS）、training.gov.au 等。AustLII 主站会拦截自动访问，可改用 classic.austlii 或 queenslandjudgments。
+
+### 首轮限制（2026-11-20）
 - 首轮学习在云端会话中完成。该会话的网络策略**没有放行政府和行业网站**，所以所有内容都依据搜索引擎对官方页面的摘要，没有直接打开原文核对。另外，首轮搜索额度中途用完，后写的文件「待证实」比例较高。
 - **下一轮首要任务**：放行官方域名（清单见 `07-学习报告/待证实与待决定汇总.md`）后，逐条核对「待证实」，优先核对时限类内容（保修、投诉、冷静期、定金）。
 
