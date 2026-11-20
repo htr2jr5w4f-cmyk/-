@@ -76,6 +76,7 @@
 - **布里斯班 infrastructure charges**（Resolution No.15 2026，2026-07-01 起）：独立住宅 1–2 卧 $13,423.83，3 卧以上 $18,793.33；现有地块有需求抵扣，在现有地块建一栋房可能不用交（推断，须向 council 确认）。
 - **付款**（已核原文）：BIF Act s61(2)(b) 的 resident owner 例外成立（个人业主、完工时或 6 个月内入住），但应持 owner builder permit 的人不算（s61(5)）；payment schedule 15 个工作日（s76）。项目信托账户：少于 3 个居住单元的住宅工程豁免（s15C），现行门槛私营合同 $10M；原定降到 $3M、$1M 的计划据报道已暂停（QBCC 推行页面最新阶段仍为 2022-01-01，正式暂停的法律形式*待证实）。
 - **Home Warranty 补充**：保额按实质完工前、后两类各 $200,000（加保 $300,000）；同时签约建 3 个以上居住单元的完全没有保险（QBCC Act s68(2)）；cost plus 合同没有未完工保障；整栋场外预制的部分和运输不保。
+- **三套保修时限别混淆**（已核原文）：① 法定保修诉讼期：结构缺陷 6 年、其他 1 年（QBCC Act Sch 1B s29）；② Home Warranty 保险：结构 6 年 6 个月内发现、3 个月内索赔，非结构 6 个月内发现、7 个月内索赔；③ 向 QBCC 投诉：知道缺陷后 12 个月内。
 - **缺陷与纠纷**（已核原文）：「Category 1/2 defect」不是现行法规术语；DTR 整改期一般 35 天（Regulation s53A）；内部复审 28 天（s86B）；QCAT 不得暂停 DTR 的执行（s87A(2)）；没有先走 QBCC 争议解决程序（s77(2)），QCAT 对建造纠纷没有管辖权；实际完工前已明显的缺陷不能向保险索赔；不合理拒绝 builder 回来整改会失去索赔资格。
 - **安全**：工程石材（engineered stone）2024-07-01 起全国禁用；昆州住宅坠落防护：WHS Regulation 2011 (Qld) s306C（3 m 以下也须识别和控制坠落风险，强制义务）、s306D（3 m / 屋面坡度 >26° 的硬性要求，已核原文）；construction project 门槛 $250,000（s292）；principal contractor 按 s293 认定：默认是委托项目的 PCBU，但个人住宅业主把项目交给一个对工地有管理控制权的 PCBU 时，principal contractor 是那个被聘方（s293(3)）；owner builder 自己分别雇各工种时是否属于 principal contractor 须向 WorkSafe 书面确认*，确认前按「是」准备。
 - **电气**：Electrical Safety Regulation 2013 已于 2026-08-31 失效，2026-09-01 起由 Electrical Safety Regulation 2026 取代；AS/NZS 3000 由该法规强制执行（NCC 不直接引用）。
