@@ -71,8 +71,9 @@
 - **QBCC 执照**：住宅工程超过 $3,300* 需执照；Owner builder permit 门槛 $11,000*（含 GST），无 Home Warranty 保险，6 年内出售须书面告知买家。
 - **Home Warranty**：超过 $3,300 的住宅工程须投保；保额上限标准 $200,000，可加保至 $300,000*；结构缺陷约 6 年 6 个月*；非结构缺陷在实际完工后 6 个月内发现、7 个月内报案*。
 - **合同**：超过 $3,300 为 Level 1，≥$20,000 为 Level 2*；定金上限：合同价 ≥$20,000 为 5%*；冷静期 5 个工作日*；变更必须书面。
-- **安全**：工程石材（engineered stone）2024-07-01 起全国禁用；昆州住宅坠落防护有 3 m / 屋面坡度 >26° 的硬性要求*；业主自建工程 ≥$250k 默认为 principal contractor*。
-- **烟雾报警器**：昆州新建房屋须装互联光电式、符合 AS 3786-2014 的报警器。
+- **安全**：工程石材（engineered stone）2024-07-01 起全国禁用；昆州住宅坠落防护：WHS Regulation 2011 (Qld) s306C（3 m 以下也须识别和控制坠落风险，强制义务）、s306D（3 m / 屋面坡度 >26° 的硬性要求，已核原文）；construction project 门槛 $250,000（s292）；principal contractor 按 s293 认定：默认是委托项目的 PCBU，但个人住宅业主把项目交给一个对工地有管理控制权的 PCBU 时，principal contractor 是那个被聘方（s293(3)）；owner builder 自己分别雇各工种时是否属于 principal contractor 须向 WorkSafe 书面确认*，确认前按「是」准备。
+- **电气**：Electrical Safety Regulation 2013 已于 2026-08-31 失效，2026-09-01 起由 Electrical Safety Regulation 2026 取代；AS/NZS 3000 由该法规强制执行（NCC 不直接引用）。
+- **烟雾报警器**：昆州新建房屋须装互联光电式、符合 AS 3786-2014 的报警器；2027-01-01 起适用于所有住宅。NCC 2025 引用的是 AS 3786-2023，两者在 2027 年后如何衔接*待确认。
 
 ## 六、技能与工具清单（详见 `06-技能清单/技能与工具清单.md`）
 - Claude 内置技能：pdf（生成和检查 PDF）、xlsx（Excel 成本表）、WebSearch/WebFetch（检索官方资料）、研究子代理（按主题并行研究）。本轮未安装第三方 skill。
