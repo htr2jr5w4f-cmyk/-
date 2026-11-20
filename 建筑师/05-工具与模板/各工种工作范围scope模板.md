@@ -27,7 +27,7 @@
 | 1 | 执照 | 分包商须持有覆盖本 scope 的 QBCC contractor 执照（或下表列明的其他执照），签约前 builder 在 QBCC 登记册核查并截图存档。与无相应执照者签约做需执照的 building work，builder 本身违法 | QBCC Act s51B [S2][S8] |
 | 2 | 书面合同 | 分包价超过 $10,000 的，开工前签书面合同；$10,000 及以下的完工前签；plumbing、drainage、gas、化学白蚁、fire protection、mechanical services 等不论金额都要书面合同 | QBCC Act s67G；QBCC 页面 [S2][S8] |
 | 3 | 付款期 | 分包合同（Part 4A 所指 subcontract，即 builder 与持牌分包商之间）约定的进度款付款期超过收到 payment claim 后 **25 个工作日**的部分无效；合同未约定或约定无效时，按 BIF Act 默认 **10 个工作日**。「pay when paid」（业主付了才付分包）条款无效 | QBCC Act s67U；BIF Act s73(1)(b)、s73(4)、s74 [S2][S3] |
-| 4 | 工作日 | 计算付款期的 business day 不含周末、公众假日和 **12 月 22 日至次年 1 月 10 日** | QBCC Act s67U(2) [S2] |
+| 4 | 工作日 | 两套算法，别混用：按 QBCC Act s67U/s67W 判断 25（或 15）个工作日上限时，business day 不含周末、公众假日和 **12 月 22 日至次年 1 月 10 日整段**；按 BIF Act 计算（如默认 10 个工作日、payment schedule 15 个工作日），不含周末、公众假日和 **12 月 22–24 日、27–31 日、1 月 2–10 日**（Schedule 2）。合同里写清用哪一套 | QBCC Act s67U(2)、s67W(2)；BIF Act Sch 2 [S2][S3] |
 | 5 | 保留金 | 实际完工前保留金加担保合计不超过分包价 5%；每笔扣款不超过该笔 10%；实际完工后不超过 2.5%；合同没写返还时间的，完工后 12 个月返还；缺陷责任期结束前 10 个工作日用 S67NC 表格通知 | QBCC Act s67L–s67NC [S2][S8] |
 | 6 | Variation | 分包商只按 builder 书面指令做变更；口头指令当天补书面。builder 对业主的变更必须先取得业主书面同意（Sch 1B s40），所以分包变更不得先于业主变更 | QBCC Act Sch 1B s40–41（见 CLAUDE.md 第五节）|
 | 7 | WHS | 属于高风险建筑工作（WHS Regulation s291，例如坠落超过 2 m、沟槽深超过 1.5 m、带电作业、移动机械区域）的，开工前交 SWMS；construction project（≥$250,000）的 SWMS 副本交 principal contractor；所有工人持 White Card；遵守工地 WHS management plan 和入场培训 | WHS Reg s291、s299–s303、s309、s316–s317 [S6] |
@@ -546,7 +546,7 @@
 ## 来源
 - [S1] Queensland Building and Construction Commission Regulation 2018（Schedule 1 s2、s6、s20、s29、s30、s32、s40、s53、s54；Schedule 2 Parts 1–60 执照类别和工作范围；Schedule 3）. Queensland Government. https://www.legislation.qld.gov.au/view/pdf/inforce/current/sl-2018-0138 ｜Current as at 2026-11-02｜访问 2026-11-21｜已读原文
 - [S2] Queensland Building and Construction Commission Act 1991（s67A、s67AAA、s67B、s67D、s67U、s67W；s51B、s67G、s67L–s67NC 引自本库已核文件）. Queensland Government. https://www.legislation.qld.gov.au/view/pdf/inforce/current/act-1991-098 ｜Current as at 2026-02-01｜访问 2026-11-21｜已读原文
-- [S3] Building Industry Fairness (Security of Payment) Act 2017（s73、s74）. Queensland Government. https://www.legislation.qld.gov.au/view/pdf/inforce/current/act-2017-043 ｜Current as at 2026-04-28｜访问 2026-11-21｜已读原文
+- [S3] Building Industry Fairness (Security of Payment) Act 2017（s73、s74、Schedule 2 business day）. Queensland Government. https://www.legislation.qld.gov.au/view/pdf/inforce/current/act-2017-043 ｜Current as at 2026-04-28｜访问 2026-11-21｜已读原文
 - [S4] ABCB Housing Provisions (NCC 2022) Parts 3.4、4.2、5.6、7.2、7.4、8、9.5、10.2，Referenced documents；NCC 2022 Volume Two H1D4、H1D6、H1D7、H1D8、H4D2. ABCB. https://ncc.abcb.gov.au/editions/ncc-2022/adopted/housing-provisions ｜NCC 2022｜本轮未重新打开，引自本库 `05-工具与模板/住宅施工工序与用料总表.md` 和 `01-法规标准/住宅相关澳大利亚标准清单.md`（前轮已读原文，访问 2026-11-21）
 - [S5] Building Regulation 2021 (Qld) s44、s46. Queensland Government. https://www.legislation.qld.gov.au/view/whole/html/inforce/current/sl-2021-0126 ｜现行版本｜本轮未重新打开，引自本库 `05-工具与模板/住宅施工工序与用料总表.md`（前轮已读原文）
 - [S6] Work Health and Safety Regulation 2011 (Qld) s291、s299–s303、s306C、s306D、s309、s316–s317、s529D. Queensland Government. https://www.legislation.qld.gov.au/view/pdf/inforce/current/sl-2011-0240 ｜Current as at 2026-03-29｜本轮未重新打开，引自本库 `04-现场经验与案例/工地安全WHS规定.md`（前轮已读原文）
