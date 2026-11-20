@@ -48,7 +48,8 @@
 4. **写作格式**：见 `06-技能清单/知识文件写作规范.md`（开头摘要 + 元数据行，正文 [S#] 来源编号，文末来源列表）。
 5. **文件操作**：只在本文件夹（用户电脑上为 `F:\建筑师`）内创建和修改文件；不删除任何文件；不动电脑上其他位置的文件。
 6. **技能**：可使用任何需要的 skill；新装 skill 只能来自官方或知名开源来源，并登记到 `06-技能清单/技能与工具清单.md`。
-7. **需要业主决定的事**：记入 `07-学习报告/待证实与待决定汇总.md` 和当期学习报告，然后继续做其他部分，不停下来等。
+7. **表格编号写全称**：同一编号在不同制度下含义不同（如 QBCC 新建住宅合同的 Form 4 是进度款异议通知、Form 7 是实际完工证书；给排水的 Form 4 是 notifiable work 登记、Form 7 是负责人通知），提到时一律写「制度 + 编号 + 名称」。
+8. **需要业主决定的事**：记入 `07-学习报告/待证实与待决定汇总.md` 和当期学习报告，然后继续做其他部分，不停下来等。
 
 ## 三、网络与已知限制
 - 2026-11-21 起，云端环境 `builder-knowledge-base` 已放行 106 个网站（2026-11-21 再加 20 个：City Plan、厂家手册托管域名、TAFE 和培训网站等），包括：QBCC、昆州与联邦法律库、ABCB/NCC、ABS、布里斯班及东南昆州各市政府、WorkSafe、Safe Work Australia、QCAT 与判例库、昆州消防、ATO、RBA、Urban Utilities、Energex、NBN、NatHERS、Wood Solutions、钢结构协会、主要建材厂家（BlueScope、Lysaght、James Hardie、CSR/Gyprock、Boral、Stratco、Bunnings、Reece、Tradelink）、成本报告（RLB、CoreLogic、Rawlinsons、AIQS）、training.gov.au 等。AustLII 主站会拦截自动访问，可改用 classic.austlii 或 queenslandjudgments。
