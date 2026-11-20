@@ -232,7 +232,18 @@ def 尺寸类型(dim):
 def 统计(doc, 图层过滤=None, 展开块=False):
     msp = doc.modelspace()
     结果 = defaultdict(图层统计)
-    闭合明细 = []  # (图层, 类型, handle, 面积, 周长)
+    闭合明细 = []  # (图层, 类型, handle, 面积, 周长, 外包框或 None)
+
+    def 外包(e):
+        """实体外包框 (xmin, ymin, xmax, ymax)，图纸单位；用于在多图合一的文件里定位每个闭合图形。"""
+        try:
+            from ezdxf import bbox
+            b = bbox.extents([e])
+            if b.has_data:
+                return (b.extmin.x, b.extmin.y, b.extmax.x, b.extmax.y)
+        except Exception:
+            pass
+        return None
 
     def 匹配(layer):
         if not 图层过滤:
@@ -282,7 +293,7 @@ def 统计(doc, 图层过滤=None, 展开块=False):
             if A is not None:
                 s.闭合面积 += A
                 s.闭合数 += 1
-                闭合明细.append((layer, t, e.dxf.handle, A, L or 0.0))
+                闭合明细.append((layer, t, e.dxf.handle, A, L or 0.0, 外包(e)))
         elif t == "HATCH":
             try:
                 A = 填充面积(e)
@@ -291,7 +302,7 @@ def 统计(doc, 图层过滤=None, 展开块=False):
                 A = 0.0
             s.填充面积 += A
             s.填充数 += 1
-            闭合明细.append((layer, t, e.dxf.handle, A, 0.0))
+            闭合明细.append((layer, t, e.dxf.handle, A, 0.0, 外包(e)))
         elif t == "TEXT":
             p = e.dxf.insert
             s.文字.append(("TEXT", e.dxf.text, p.x, p.y))
@@ -405,9 +416,11 @@ def 写xlsx(路径, 文件名, 单位说明, k, 结果, 闭合明细, 图层过�
 
     # 5. 闭合图形明细（方便逐个房间核对）
     ws = wb.create_sheet("闭合图形明细")
-    表头(ws, ["图层", "类型", "句柄 handle", "面积 m²", "周长 m"], [16, 12, 12, 12, 12])
-    for layer, t, h, A, L in 闭合明细:
-        ws.append([layer, t, h, round(A * k * k, 4), round(L * k, 4)])
+    表头(ws, ["图层", "类型", "句柄 handle", "面积 m²", "周长 m", "外包 xmin m", "外包 ymin m", "外包 xmax m", "外包 ymax m"],
+        [16, 12, 12, 12, 12, 12, 12, 12, 12])
+    for layer, t, h, A, L, bb in 闭合明细:
+        ws.append([layer, t, h, round(A * k * k, 4), round(L * k, 4)] +
+                  ([round(v * k, 3) for v in bb] if bb else [None] * 4))
 
     # 6. 说明
     ws = wb.create_sheet("说明")
@@ -479,12 +492,17 @@ def main(argv=None):
     结果, 闭合明细 = 统计(doc, args.图层, args.展开块)
     if not 结果:
         print("没有找到符合条件的实体（检查图层名或图层过滤）。")
-    打印摘要(args.输入, 单位说明, k, 结果, 提示)
+    # 先写 xlsx 再打印：终端输出被截断（如 | head）时不会丢掉 xlsx
     if args.输出:
         写xlsx(args.输出, args.输入, 单位说明, k, 结果, 闭合明细, args.图层, 提示)
+    打印摘要(args.输入, 单位说明, k, 结果, 提示)
+    if args.输出:
         print(f"已写出：{args.输出}")
     return 结果, k
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except BrokenPipeError:  # 输出被 head 等提前关闭：结果文件已写出，安静退出
+        sys.stderr.close()

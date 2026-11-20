@@ -358,24 +358,8 @@ def 命令_量尺(a):
 
     文字 = [t for t in 提取文字(page) if 点在区域(((t["x0"] + t["x1"]) / 2, (t["y0"] + t["y1"]) / 2), 区)]
 
-    # 终端摘要
-    print(f"文件：{a.pdf} 第 {a.页} 页；{比例说明}；1 pt = {k:.6f} m")
-    print(f"区域（pt）：{'整页' if not 区 else ', '.join(f'{v:.1f}' for v in 区)}（只计完全落在区域内的线段和闭合路径）")
-    print("-" * 78)
-    总长 = 总面积 = 0.0
-    for 键 in sorted(分组):
-        g = 分组[键]
-        总长 += g["长度"]
-        总面积 += g["面积"]
-        print(f"{键:<40} 线长 {g['长度'] * k:>9.3f} m（{g['段数']} 段）  闭合面积 {g['面积'] * k * k:>9.3f} m²（{g['闭合数']} 个）")
-    print("-" * 78)
-    print(f"合计：线长 {总长 * k:.3f} m；闭合面积 {总面积 * k * k:.3f} m²（闭合面积可能含嵌套重复，逐个核对见明细）")
-    for c in sorted(闭合明细, key=lambda c: -c["面积m2"])[:20]:
-        print(f"  闭合：{c['面积m2']:.3f} m²  外包 ({c['x0']:.1f},{c['y0']:.1f})–({c['x1']:.1f},{c['y1']:.1f}) pt  {c['分组']}")
-    print(f"区域内文字 {len(文字)} 行：")
-    for t in 文字:
-        print(f"  ({t['x0']:.1f}, {t['y0']:.1f}) pt  {t['文字']}")
-
+    总长 = sum(g["长度"] for g in 分组.values())
+    总面积 = sum(g["面积"] for g in 分组.values())
     结果 = {"文件": a.pdf, "页": a.页, "比例说明": 比例说明, "每pt米": k, "区域pt": 区,
             "分组": {键: {"线长m": g["长度"] * k, "段数": g["段数"], "闭合面积m2": g["面积"] * k * k,
                         "闭合数": g["闭合数"]} for 键, g in 分组.items()},
@@ -387,6 +371,22 @@ def 命令_量尺(a):
                 json.dump(结果, f, ensure_ascii=False, indent=2)
         else:
             写xlsx(a.输出, 结果)
+    # 终端摘要（结果文件已先写出，终端输出被截断也不丢）
+    print(f"文件：{a.pdf} 第 {a.页} 页；{比例说明}；1 pt = {k:.6f} m")
+    print(f"区域（pt）：{'整页' if not 区 else ', '.join(f'{v:.1f}' for v in 区)}（只计完全落在区域内的线段和闭合路径）")
+    print("-" * 78)
+    for 键 in sorted(分组):
+        g = 分组[键]
+        print(f"{键:<40} 线长 {g['长度'] * k:>9.3f} m（{g['段数']} 段）  闭合面积 {g['面积'] * k * k:>9.3f} m²（{g['闭合数']} 个）")
+    print("-" * 78)
+    print(f"合计：线长 {总长 * k:.3f} m；闭合面积 {总面积 * k * k:.3f} m²（闭合面积可能含嵌套重复，逐个核对见明细）")
+    for c in sorted(闭合明细, key=lambda c: -c["面积m2"])[:20]:
+        print(f"  闭合：{c['面积m2']:.3f} m²  外包 ({c['x0']:.1f},{c['y0']:.1f})–({c['x1']:.1f},{c['y1']:.1f}) pt  {c['分组']}")
+    print(f"区域内文字 {len(文字)} 行：")
+    for t in 文字:
+        print(f"  ({t['x0']:.1f}, {t['y0']:.1f}) pt  {t['文字']}")
+
+    if a.输出:
         print(f"已写出：{a.输出}")
     return 结果
 
@@ -470,4 +470,7 @@ def main(argv=None):
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except BrokenPipeError:  # 输出被 head 等提前关闭：结果文件已写出，安静退出
+        sys.stderr.close()
