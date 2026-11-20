@@ -82,7 +82,8 @@
 - **高层·审批与产权**（已核原文）：impact assessable 公示期至少 15 个工作日（Planning Act s53）；只有 building certifier–level 1 能批 20 层（Building Act s152–153）；入住证为 certificate of occupancy（Form 11）；消防部门（Queensland Fire and Rescue）在建筑转介中只能给建议；20 层必须持 Builder – Open（Medium rise 最多 3 层）；公寓期房适用 BCCM Act 第 5 章第 2 部分（不是 Land Sales Act），sunset 规则见 s217B；超过 3 层的 multiple dwelling 没有 QBCC Home Warranty（QBCC Regulation s26）。
 - **高层·工地**（已核原文）：塔吊须 design 和 item 两项注册；脚手架至少每 30 天检查（WHS Reg s225）；公寓不属于 housing construction work，坠落防护按 2 m 阈值；布里斯班施工噪音时间：周一至周六 6:30–18:30，周日和公众假期不得施工（EP Act s440R；BCC 封路页面写到 18:00，以法规为准）。
 - **安全**：工程石材（engineered stone）2024-07-01 起全国禁用；昆州住宅坠落防护：WHS Regulation 2011 (Qld) s306C（3 m 以下也须识别和控制坠落风险，强制义务）、s306D（3 m / 屋面坡度 >26° 的硬性要求，已核原文）；construction project 门槛 $250,000（s292）；principal contractor 按 s293 认定：默认是委托项目的 PCBU，但个人住宅业主把项目交给一个对工地有管理控制权的 PCBU 时，principal contractor 是那个被聘方（s293(3)）；owner builder 自己分别雇各工种时是否属于 principal contractor 须向 WorkSafe 书面确认*，确认前按「是」准备。
-- **电气**：Electrical Safety Regulation 2013 已于 2026-08-31 失效，2026-09-01 起由 Electrical Safety Regulation 2026 取代；AS/NZS 3000 由该法规强制执行（NCC 不直接引用）。
+- **电气**（已核原文）：Electrical Safety Regulation 2026 自 2026-09-01 施行，取代 2013 版；无照做电气工作最高 400 penalty units（Act s55）；电气工作完工发 Certificate of Testing and Safety（s208），接电后发 Certificate of Testing and Compliance（s229），都要保存 5 年；首次接电前由 Energex 检查（s217）；工地临时用电按 AS/NZS 3012（s140）；AS/NZS 3000 由该法规强制，NCC 不直接引用。
+- **给排水与燃气**（已核原文）：新建住宅给排水是 permit work，开工前由 plumber 递交 Form 1，拿到 final inspection certificate 才能使用（PD Act s69）；BCC 2026–27 新房给排水收费：申请费 $300 + 检查费 $1,290（含 5 次检查）；热水储水 ≥60 °C、出水 ≤50 °C（NCC B2D5）；燃气工须持 RSHQ 的个人 gas work licence 和 QBCC Gasfitting 承包商执照两种；燃气合规证书完工时交业主、5 个工作日内交燃气网络运营商（s95）。
 - **烟雾报警器**：昆州新建房屋须装互联光电式、符合 AS 3786-2014 的报警器；2027-01-01 起适用于所有住宅。NCC 2025 引用的是 AS 3786-2023，两者在 2027 年后如何衔接*待确认。
 
 ## 六、技能与工具清单（详见 `06-技能清单/技能与工具清单.md`）
