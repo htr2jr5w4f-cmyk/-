@@ -27,6 +27,11 @@ def main(src, dst):
     html = subprocess.run(["pandoc", src, "-f", "gfm", "-t", "html5", "--standalone",
                            "--metadata", "title= ", "--css", "/dev/null"],
                           capture_output=True, text=True, check=True).stdout
+    import re as _re
+    m = _re.search(r"^# (.+)$", pathlib.Path(src).read_text(encoding="utf-8"), _re.M)
+    title = m.group(1).strip() if m else pathlib.Path(src).stem
+    html = _re.sub(r"<title>.*?</title>", f"<title>{title}</title>", html, flags=_re.S)
+    html = _re.sub(r'<header id="title-block-header">.*?</header>', "", html, flags=_re.S)
     html = html.replace("</head>", f"<style>{CSS}</style></head>")
     tmp = pathlib.Path(dst).with_suffix(".tmp.html")
     tmp.write_text(html, encoding="utf-8")
