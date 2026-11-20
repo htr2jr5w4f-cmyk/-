@@ -528,28 +528,29 @@ def 写pdf(路径, W, D, 排, 门, 标题, 备注):
     for (a, b) in 隔墙线段(W, D, 排):
         线("隔墙", [a, b])
     _, 门色, 门线宽 = 图层表["门"]
+
+    def 门弧(c, a, b):
+        """画门扇开启弧（四分之一圆，三次贝塞尔近似，不闭合）：圆心 c，从 c+a 转到 c+b（a、b 垂直等长，单位 m）。"""
+        kk = 0.5523
+        A = (c[0] + a[0], c[1] + a[1])
+        B = (c[0] + b[0], c[1] + b[1])
+        sh = page.new_shape()
+        sh.draw_bezier(P(*A), P(A[0] + kk * b[0], A[1] + kk * b[1]), P(B[0] + kk * a[0], B[1] + kk * a[1]), P(*B))
+        sh.finish(color=门色, width=门线宽, closePath=False, oc=oc["门"])
+        sh.commit()
     for d in 门:
         y扇 = d["y"] + d["向内"] * d["宽"]
         线("门", [(d["x0"], d["y"]), (d["x0"], y扇)])
-        sh = page.new_shape()
-        sh.draw_sector(P(d["x0"], d["y"]), P(d["x1"], d["y"]), 90 * (-1 if d["向内"] < 0 else 1), fullSector=False)
-        sh.finish(color=门色, width=门线宽, oc=oc["门"])
-        sh.commit()
+        门弧((d["x0"], d["y"]), (d["宽"], 0), (0, d["向内"] * d["宽"]))
     e = 排["入口门"]
     线("门", [(0, e["y1"]), (e["宽"], e["y1"])])
-    sh = page.new_shape()
-    sh.draw_sector(P(0, e["y1"]), P(e["宽"], e["y1"]), -90, fullSector=False)
-    sh.finish(color=门色, width=门线宽, oc=oc["门"])
-    sh.commit()
+    门弧((0, e["y1"]), (e["宽"], 0), (0, -e["宽"]))
     字 = max(5.0, min(9.0, 0.25 * k))  # 房间名字号（pt）
     _写字(page, P(-0.3, 0)[0], P(0, e["y1"] + 0.45)[1], "租户入口", 字 * 0.8, oc["门"], 对齐="右")
     e2 = 排.get("第二出口")
     if e2:
         线("门", [(W, e2["y0"]), (W - e2["宽"], e2["y0"])])
-        sh = page.new_shape()
-        sh.draw_sector(P(W, e2["y0"]), P(W - e2["宽"], e2["y0"]), -90, fullSector=False)
-        sh.finish(color=门色, width=门线宽, oc=oc["门"])
-        sh.commit()
+        门弧((W, e2["y0"]), (-e2["宽"], 0), (0, e2["宽"]))
         _写字(page, P(W + 0.3, 0)[0], P(0, e2["y1"] + 0.45)[1], "第二出口", 字 * 0.8, oc["门"])
     for r in 排["已排"] + 排["余量"]:
         c = P((r["x0"] + r["x1"]) / 2, (r["y0"] + r["y1"]) / 2)
