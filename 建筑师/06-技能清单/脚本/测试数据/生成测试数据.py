@@ -115,13 +115,16 @@ def 生成pdf(路径A3, 路径A4):
         page.draw_line(Q(*a), Q(*b), color=(0, 0, 1), width=0.5)
     # 圆形柱（半径 0.5 m → 面积 0.7854 m²，周长 3.1416 m），用贝塞尔曲线表示，检验曲线长度和面积
     page.draw_circle(Q(4, 5), 0.5 * 米, color=(1, 0, 0), width=0.5)
-    # 房间名和尺寸文字（用内置字体 china-s 支持中文）
+    # 房间名：优先嵌入系统中文字体（文泉驿正黑），使 pdftoppm 也能正常显示；找不到时退回内置 china-s
+    字体文件 = "/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc"
+    字体参数 = dict(fontname="wqy", fontfile=字体文件) if os.path.exists(字体文件) else dict(fontname="china-s")
     for 名, x, y in [("卧室1", 3, 7.5), ("卧室2", 3, 2.5), ("客厅", 13, 7.5), ("厨房", 10.5, 2.5), ("浴室", 16.5, 2.5)]:
-        page.insert_text(Q(x, y), 名, fontname="china-s", fontsize=9)
+        page.insert_text(Q(x, y), 名, fontsize=9, **字体参数)
     page.draw_line(Q(0, -1.5), Q(20, -1.5), color=(0.5, 0.5, 0.5), width=0.3)  # 尺寸线 20 m（区域外不计）
     page.insert_text(Q(9.5, -1.3), "20000", fontsize=8)
     page.insert_text(pymupdf.Point(300 * pt, 280 * pt), "SCALE 1:100 @ A3", fontsize=10)
-    doc.save(路径A3)
+    doc.subset_fonts()  # 只嵌入用到的字形，减小文件
+    doc.save(路径A3, garbage=3, deflate=True)
 
     # A3 图缩印到 A4（297 × 210 mm），比例变成 1:100 × 420/297
     src = pymupdf.open(路径A3)
