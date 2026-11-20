@@ -9,6 +9,8 @@
 - **住宅线**：Class 1a 独立住宅，NCC Volume Two / Housing Provisions，持 Builder – Low Rise 执照。
 - **高层线**：Class 2 公寓、Class 5 办公、Class 7a 停车库、Class 9 等，NCC Volume One，持 Builder – Open 执照。全过程包括：可行性与融资 → 规划审批（DA）→ 设计协调（建筑、结构、消防、机电、立面）→ 招标与合同（AS 4000 / AS 4902 等）→ 场地勘察、桩基、基坑支护与降水 → 地下室 → 核心筒与楼板（含后张预应力）→ 模板、塔吊与施工电梯 → 立面与幕墙 → 消防系统、给排水、电梯、电气、暖通 → 防水（地下室、平台、阳台、湿区）→ 认证、入住、产权分户（strata）→ 缺陷与保修。
 
+**业主决定（2026-11-21）**：业主本人要考取 QBCC builder 执照（近期 Low Rise 建自住房，长期目标 Builder – Open）。考证路线见 `01-法规标准/业主考取QBCC Builder执照路线图.md`。因此后续建议默认业主以持牌 builder 身份施工，不走 owner builder 路线。
+
 **交付能力要求（看图出方案）**：业主给一份图纸（住宅或高层），要能完整给出：
 1. **全部施工步骤**：按工序排列，标出每一步依据的规范和标准、需要的审批和法定检查节点。
 2. **用料**：工程量计算（quantity take-off），列出材料规格、数量、单位、损耗系数，以及采购渠道。
@@ -47,7 +49,7 @@
 7. **需要业主决定的事**：记入 `07-学习报告/待证实与待决定汇总.md` 和当期学习报告，然后继续做其他部分，不停下来等。
 
 ## 三、网络与已知限制
-- 2026-11-21 起，云端环境 `builder-knowledge-base` 已放行 86 个网站，包括：QBCC、昆州与联邦法律库、ABCB/NCC、ABS、布里斯班及东南昆州各市政府、WorkSafe、Safe Work Australia、QCAT 与判例库、昆州消防、ATO、RBA、Urban Utilities、Energex、NBN、NatHERS、Wood Solutions、钢结构协会、主要建材厂家（BlueScope、Lysaght、James Hardie、CSR/Gyprock、Boral、Stratco、Bunnings、Reece、Tradelink）、成本报告（RLB、CoreLogic、Rawlinsons、AIQS）、training.gov.au 等。AustLII 主站会拦截自动访问，可改用 classic.austlii 或 queenslandjudgments。
+- 2026-11-21 起，云端环境 `builder-knowledge-base` 已放行 106 个网站（2026-11-21 再加 20 个：City Plan、厂家手册托管域名、TAFE 和培训网站等），包括：QBCC、昆州与联邦法律库、ABCB/NCC、ABS、布里斯班及东南昆州各市政府、WorkSafe、Safe Work Australia、QCAT 与判例库、昆州消防、ATO、RBA、Urban Utilities、Energex、NBN、NatHERS、Wood Solutions、钢结构协会、主要建材厂家（BlueScope、Lysaght、James Hardie、CSR/Gyprock、Boral、Stratco、Bunnings、Reece、Tradelink）、成本报告（RLB、CoreLogic、Rawlinsons、AIQS）、training.gov.au 等。AustLII 主站会拦截自动访问，可改用 classic.austlii 或 queenslandjudgments。
 
 ### 首轮限制（2026-11-20）
 - 首轮学习在云端会话中完成。该会话的网络策略**没有放行政府和行业网站**，所以所有内容都依据搜索引擎对官方页面的摘要，没有直接打开原文核对。另外，首轮搜索额度中途用完，后写的文件「待证实」比例较高。
