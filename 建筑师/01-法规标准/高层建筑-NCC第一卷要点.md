@@ -4,7 +4,7 @@
 
 ## 摘要
 本文整理一栋布里斯班 20 层左右的混合用途大楼（Class 2 公寓 + Class 7a 地下停车 + Class 5/6 底商，可能带 Class 9）要用到的 NCC 2022 Volume One 条款。截至 2026-11-20，昆州仍执行 NCC 2022；NCC 2025 在昆州 2027-05-01 才生效 [S1][S2]。内容覆盖：建筑分类（Part A6）、Type of construction 与 FRL（C2D2、Specification 5）、effective height 定义和 25 m 阈值（喷淋、烟感、应急电梯、EWIS、消防控制中心、楼梯加压）、疏散（Part D2）、无障碍（Part D4 + Premises Standards）、能效（Section J，Class 2 公寓按 NatHERS 平均 7 星 / 单户不低于 6 星）、隔声（NCC 2022 是 **Part F7**，不是 F5，F5 是层高）、防水（F1D5、F2D2）和冷凝（Part F8），最后讲 DtS 与 Performance Solution 的关系、fire engineering 的法定流程（A2G2(4)）。
-对省钱的用处：①在方案阶段就把高度控制在 25 m effective height 的上面还是下面，会整体改变消防系统配置，是最大的成本分水岭之一；②Type A 各类别的 FRL 不同（Class 2 是 90 分钟，Class 5/7a 是 120 分钟，Class 6 是 180 分钟），合理安排各类别所在楼层和防火分隔可以少做高 FRL 构件；③用 Performance Solution 替代 DtS 往往能省钱（例如减少楼梯或延长疏散距离），但必须走完整的 fire engineering 流程并经 QFD 审查（见 `高层建筑-规划审批与消防审查.md`）。
+对省钱的用处：①在方案阶段就把高度控制在 25 m effective height 的上面还是下面，会整体改变消防系统配置，是最大的成本分水岭之一；②Type A 各类别的 FRL 不同（Class 2 是 90 分钟，Class 5/7a 是 120 分钟，Class 6 是 180 分钟），合理安排各类别所在楼层和防火分隔可以少做高 FRL 构件；③用 Performance Solution 替代 DtS 往往能省钱（例如减少楼梯或延长疏散距离），但必须走完整的 fire engineering 流程并转介 Queensland Fire and Rescue（QFR）审查（见 `高层建筑-规划审批与消防审查.md`）。
 
 > 核对方式：第二轮网络放行后，本文所有 NCC 条款都直接从 ncc.abcb.gov.au「NCC 2022 Volume One Online」各 Part 页面读取（在线版为已纳入修订的现行文本）。条款号用 NCC 2022 新编号（如 C2D2），括号里可注明 2019 版旧编号（如 C1.1），便于对照旧图纸和旧报告。NCC 2025 的条款编号可能变化，2027-05-01 以后的项目要重新核对。
 
@@ -137,7 +137,7 @@ FRL 写法为「结构稳定性 / 完整性 / 隔热性」（分钟）。下表�
 | 出口间距 | 互为替代的出口之间不少于 9 m；Class 2/3 不超过 45 m，其他一般不超过 60 m；两条疏散路线不能汇合到间距小于 6 m | D2D6 | [S17] |
 | 其他 | 出口宽度 D2D8、门宽 D2D9、经防火出口的疏散 D2D12、出口排放 D2D15、人数计算 Table D2D18（例如混合用途小面积部分仍按实际用途计人数）| D2D7–D2D18 | [S17][S7] |
 
-**高层 Class 2 的常见格局**：25 m 以上必须每层 2 部楼梯（D2D3），全部防火隔离（D2D4），且服务 25 m 以上楼层的楼梯要加压（E2D4）。很多布里斯班高层公寓为了提高得房率，用 Performance Solution 论证「单楼梯 + 其他补偿措施」或延长疏散距离——这类方案必须由 fire engineer 做 FER，并按昆州规定转介 QFD 审查（见第 9 节和另一篇文件）。单楼梯方案在昆州是否有具体政策限制：待证实。
+**高层 Class 2 的常见格局**：25 m 以上必须每层 2 部楼梯（D2D3），全部防火隔离（D2D4），且服务 25 m 以上楼层的楼梯要加压（E2D4）。很多布里斯班高层公寓为了提高得房率，用 Performance Solution 论证「单楼梯 + 其他补偿措施」或延长疏散距离——这类方案必须由 fire engineer 做 FER，并按昆州规定转介 QFR（见第 9 节和另一篇文件）。单楼梯方案在昆州是否有具体政策限制：待证实。
 
 ---
 
@@ -211,7 +211,7 @@ NCC 2022 中 Part F5 是「Room heights」，隔声是 **Part F7 Sound transmiss
 
 ### 9.3 Fire engineering 在高层项目中的实际做法（昆州）
 - 消防方面的 Performance Solution 通常由 fire safety engineer 编写 fire engineering brief（即 PBDB）和 fire engineering report（FER）。昆州 fire safety engineer 须是 RPEQ（Professional Engineers Act 2002 (Qld)）：待证实具体要求。
-- 涉及 special fire services 的 Performance Solution，需转介 Queensland Fire Department（QFD）作为 referral agency 审查，QFD 的意见对 certifier 有约束力——详见 `高层建筑-规划审批与消防审查.md` 第 4 节。
+- 涉及 special fire services，或消防系统采用按 NCC Volume One Performance Requirements 评估的方案时，建筑许可申请必须转介 Queensland Fire and Rescue（QFR，法规用名；业主所说的 QFD/原 QFES 体系）。按 Planning Regulation 2017 Schedule 9 Part 3 Division 3 Table 1，QFR 在此是 **advice agency（只能给建议）**，不是有约束力的 concurrence agency——详见 `高层建筑-规划审批与消防审查.md` 第 4 节。
 - 常见消防 Performance Solution：延长疏散距离、减少出口数、外墙开口竖向分隔（C3D7）的替代、FRL 降低、取消部分防火门或防火卷帘等。每一项都会在 FER 中列明对应的 DtS 偏离、Performance Requirement（如 C1P1–C1P9、D1P4、E1P3、E2P2）和补偿措施。
 - 竣工时，certifier 要确认 Performance Solution 的条件（例如维护要求）被纳入 fire safety installations 的维护制度（Building Fire Safety Regulation / Fire Safety Regulation 的 occupier 维护义务）：待证实细节。
 
@@ -226,7 +226,7 @@ NCC 2022 中 Part F5 是「Room heights」，隔声是 **Part F7 Sound transmiss
 5. 核对消防设备：喷淋（E1D5）、消火栓（E1D2）、烟感（E2D5）、应急电梯（E3D5）、EWIS（E4D9）、消防控制中心（E1D15）。
 6. 核对施工期消防（E1D16）：effective height 达到 12 m 后，消火栓/卷盘随楼层推进（最上 2 层除外）——这条直接影响施工进度和临时消防管的安排。
 7. 核对隔声（F7D5–F7D7）、防水（F1D5、F2D2）、冷凝（F8D3、F8D4）、NatHERS（J3D3 平均 7 星、单户 6 星）。
-8. 找出图纸中所有 Performance Solution，确认有 FER、QFD 意见和 certifier 的批准条件。
+8. 找出图纸中所有 Performance Solution，确认有 FER、QFR 建议和 certifier 的批准条件。
 
 ---
 
