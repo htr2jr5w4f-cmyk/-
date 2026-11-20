@@ -348,7 +348,7 @@ def 写xlsx(路径, 文件名, 单位说明, k, 结果, 闭合明细, 图层过�
             c.font = 粗
             c.fill = 底色
             c.alignment = Alignment(wrap_text=True, vertical="center")
-        ws.freeze_panes = ws.cell(row=ws.max_row + 1, column=1)
+        ws.freeze_panes = f"A{ws.max_row + 1}"  # 用地址字符串，避免 ws.cell() 提前创建空行
         if 宽:
             for i, w in enumerate(宽):
                 ws.column_dimensions[chr(65 + i)].width = w

@@ -12,6 +12,8 @@ import os
 import sys
 import tempfile
 
+sys.dont_write_bytecode = True  # 不在测试数据文件夹留下 __pycache__
+
 这里 = os.path.dirname(os.path.abspath(__file__))
 脚本目录 = os.path.dirname(这里)
 sys.path.insert(0, 脚本目录)

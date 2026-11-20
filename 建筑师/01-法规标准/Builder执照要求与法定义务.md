@@ -247,3 +247,4 @@ QBCC 页面列出的 Builder – Low Rise 个人 contractor 申请总费用：MR
 - [S35] Exclusion due to insolvency. QBCC. https://www.qbcc.qld.gov.au/non-compliance/consequences-non-compliance/exclusion-due-insolvency ｜Last reviewed 2024-01-28｜访问 2026-11-21
 - [S36] Judgment debts. QBCC. https://www.qbcc.qld.gov.au/non-compliance/consequences-non-compliance/judgment-debts ｜Last reviewed 2021-08-30｜访问 2026-11-21
 - [S37] Suspended or cancelled licence. QBCC. https://www.qbcc.qld.gov.au/non-compliance/consequences-non-compliance/suspended-cancelled-licence ｜Last reviewed 2021-08-30｜访问 2026-11-21
+- 主会话补充（2026-11-21，依据 QBCC 2026–27 申请表 v07 07_26）：犯罪记录申报期限分两类：Supreme 或 District Court 定罪看 10 年，Magistrates Court 定罪看 5 年；2026–27 申请费与 2025 年网页金额一致（如 Low Rise 个人 SC2 $920.68、site supervisor $501.46），详见 `业主考取QBCC Builder执照路线图.md`。
