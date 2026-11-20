@@ -155,7 +155,7 @@ Work Health and Safety (Codes of Practice) Notice 2022（current as at 1 Septemb
 - 工地实践（通用做法，非法规原文）：模板和支撑须有临时工程设计（temporary works design）和浇筑前检查记录（列入 ITP 的 hold point）。
 
 ### 3. 防坠落：临边、开口（WHS Regulation s78–80、s306D–306H）[S1]
-- **非住宅类 construction work 坠落高度 ≥ 2 m**（住宅类为 ≥ 3 m）或屋面坡度 > 26° 时，开工前必须采取控制措施：首先**防止坠落**（临边防护、开口盖板、行动限制系统 travel restraint）；不可行时才用**坠落制动**（fall arresting platform、安全带系统、安全网）（s306D(1)–(3)）[S1]。20 层公寓属于非住宅类 construction work 的 2 m 门槛（housing construction work 的定义见 s306A，Class 2 多层公寓是否属于 housing construction work 待证实；保守按 2 m 执行）。
+- **非住宅类 construction work 坠落高度 ≥ 2 m**（住宅类为 ≥ 3 m）或屋面坡度 > 26° 时，开工前必须采取控制措施：首先**防止坠落**（临边防护、开口盖板、行动限制系统 travel restraint）；不可行时才用**坠落制动**（fall arresting platform、安全带系统、安全网）（s306D(1)–(3)）[S1]。20 层公寓适用 **2 m** 门槛：s306A 把 housing construction work 限定为「不位于另一住宅或建筑其他部分之上或之下（私人车库除外）」的独立屋、以防火墙分隔的联排屋，以及 ≤300 m² 的寄宿类建筑及其附属建筑 [S1]；上下叠置的公寓不属于 housing construction work。
 - 临边防护须按厂商说明或工程师 / competent person 的要求搭设；须能承受人员冲撞；顶部栏杆高度要求：基础面宽度 ≥ 1,200 mm 时，栏杆顶至少高出该面 900 mm（s306E）[S1]，其余情况见原文。
 - 电梯井、管井、楼板洞口：用固定盖板或临边防护；每层浇筑后立即恢复。
 - 楼层边缘的外防护屏（perimeter screens）兼具防坠落和防坠物功能，搭设、爬升须由持 Intermediate scaffolding / Basic rigging 及以上执照的人员进行（Sch 3）[S1]。
